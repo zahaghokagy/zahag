@@ -1,0 +1,271 @@
+body {
+  background-color: #3e6ada;
+  font-family: gilroy;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 199, 41, 0.7) 0%,
+    rgba(62, 106, 218, 0.7) 100%
+  );
+}
+/*   logo and Name    */
+.logo {
+  display: grid;
+  grid-template-columns: 6vw 1vw;
+  position: relative;
+  top: 2vh;
+  left: 2vw;
+}
+.logo img {
+  margin: 0px;
+  width: 5vw;
+}
+.logo h1 {
+  font-size: 2vw;
+  color: white;
+  margin: 0;
+  width: 0vw;
+}
+
+/* MAin chat back */
+.mainback {
+  border-radius: 10px;
+  width: 30vw;
+  margin: auto;
+}
+
+/*  top chat box */
+.top {
+  border-radius: 10px 10px 0px 0px;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-gap: 1vw;
+  grid-template-areas: "gg name";
+  background: rgb(255, 199, 41);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 199, 41, 1) 0%,
+    rgba(62, 106, 218, 1) 100%
+  );
+}
+.top img {
+  grid-area: gg;
+  margin: auto;
+  width: 3.5vw;
+}
+.top h3 {
+  grid-area: name;
+  color: white;
+  font-size: 1.4vw;
+}
+
+/*  mid of chat box */
+
+.mid {
+  height: fit-content;
+  min-height: 40vh;
+  max-height: 60vh;
+  padding: 1vw;
+  display: grid;
+  background: white;
+  overflow-y: scroll;
+}
+.mid::-webkit-scrollbar {
+  width: 6px;
+}
+.mid::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.mid::-webkit-scrollbar-thumb {
+  background: #d6d6d6;
+  border-radius: 10px;
+}
+.mid::-webkit-scrollbar-thumb:hover {
+  background: #c3c3c3;
+}
+/* things in chatbox */
+.mid img {
+  justify-self: start;
+  width: 10vw;
+  margin: 0.8vw 0px;
+}
+.mid .aa {
+  color: grey;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 6px;
+  font-size: 6px;
+  opacity: 0;
+  letter-spacing: 1px;
+}
+.mid .bb {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 6px;
+  justify-self: end;
+  color: grey;
+  opacity: 0;
+  font-size: 6px;
+  letter-spacing: 1px;
+}
+.mid .a {
+  width: 50%;
+  height: fit-content;
+  border-radius: 10px 10px 10px 0px;
+  margin: 0.8vw 0px;
+  padding: 4px 8px;
+  font-size: 1vw;
+  color: white;
+  background: #ffc729;
+  opacity: 0;
+}
+@keyframes reply {
+  from {
+    opacity: 0;
+    transform: translate(0, 4px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+.mid .b {
+  justify-self: end;
+  height: fit-content;
+  width: 50%;
+  margin: 0.8vw 0px;
+  border-radius: 10px 10px 0px 10px;
+  padding: 4px 8px;
+  font-size: 1vw;
+  color: white;
+  opacity: 0;
+  background: #3e6ada;
+}
+
+/*  bottom of the chatbox   */
+
+textarea {
+  outline: none;
+  border: none;
+  font-family: gilroy;
+  width: 94%;
+  max-height: 10%;
+  border-radius: 0px 0px 10px 10px;
+  padding: 1% 3%;
+  border-top: 6px solid whitesmoke;
+  border-bottom: 6px solid whitesmoke;
+  font-size: 14px;
+  resize: none;
+  background: whitesmoke;
+}
+textarea::-webkit-scrollbar {
+  display: none;
+}
+
+/* Track */
+
+@media screen and (max-width: 600px) {
+  .logo {
+    display: none;
+  }
+
+  /* MAin chat back */
+  .mainback {
+    border-radius: 10px;
+    width: 70vw;
+    min-width: 200px;
+    margin: auto;
+  }
+
+  /*  top chat box */
+  .top {
+    border-radius: 10px 10px 0px 0px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-gap: 1vw;
+    grid-template-areas: "gg name";
+    background: rgb(255, 199, 41);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 199, 41, 1) 0%,
+      rgba(62, 106, 218, 1) 100%
+    );
+  }
+  .top img {
+    grid-area: gg;
+    margin: auto;
+    width: 8vw;
+  }
+  .top h3 {
+    grid-area: name;
+    color: white;
+    font-size: 4vw;
+  }
+
+  /*  mid of chat box */
+
+  .mid {
+    padding: 8px;
+    height: fit-content;
+    max-height: 80vh;
+    background: white;
+    overflow-y: scroll;
+  }
+  .mid::-webkit-scrollbar {
+    width: 6px;
+  }
+  .mid::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  .mid::-webkit-scrollbar-thumb {
+    background: #d6d6d6;
+    border-radius: 10px;
+  }
+  .mid::-webkit-scrollbar-thumb:hover {
+    background: #c3c3c3;
+  }
+  /* things in chatbox */
+  .mid img {
+    justify-self: start;
+    width: 100px;
+    margin: 10px 0px;
+  }
+  .mid .a {
+    height: fit-content;
+    justify-self: flex-start;
+    width: 50%;
+    margin: 5px 0px;
+    border-radius: 0px 10px 10px 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: white;
+    background-color: #ffc107;
+  }
+  .mid .b {
+    height: fit-content;
+    justify-self: end;
+    width: 50%;
+    margin: 5px 0px;
+    border-radius: 10px 10px 0px 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: white;
+    background: #3e6ada;
+  }
+  textarea {
+    outline: none;
+    border: none;
+    font-family: gilroy;
+    width: 94%;
+    max-height: 10%;
+    border-radius: 0px 0px 10px 10px;
+    padding: 1% 3%;
+    border-top: 6px solid whitesmoke;
+    border-bottom: 6px solid whitesmoke;
+    font-size: 3vw;
+    resize: none;
+    background: whitesmoke;
+  }
+  /*  bottom of the chatbox   */
+}

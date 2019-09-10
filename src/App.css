@@ -185,3 +185,36 @@ nav li a:active {
     border: 4px;
   }
 }
+footer {
+  background-color: hsl(240, 79%, 87%);
+}
+.contact {
+  background-color: hsl(240, 85%, 92%);
+}
+.contact h1 {
+  color: #242432;
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+.contact button {
+  background: none;
+  color: #4943ed;
+  font-weight: bold;
+  border: 2px solid #4943ed;
+  border-radius: 50px;
+}
+.contact button:hover {
+  background: #4943ed;
+  color: white;
+}
+.contact h2 {
+  color: #242432;
+  font-size: 20px;
+}
+.contact h2 a {
+  color: #31bd2cc7;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}

@@ -1,16 +1,17 @@
 import React, { Component } from "react";
 import "./App.css";
-import Chatbox from './chatbox'
-import Back from './back'
+import Nav from "./components/navbar";
+import Main from "./components/main";
+
 class App extends Component {
-  //  Rendring the thing in page
   render() {
     return (
-      <div>
-        <Back />
-        <Chatbox/>
-      </div>
+      <React.Fragment>
+        <Nav />
+        <Main />
+      </React.Fragment>
     );
   }
 }
+
 export default App;

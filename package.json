@@ -4,14 +4,16 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "netlify-cli": "^2.13.1",
     "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.12",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
   },
-  "hompepage":"login.github.io/chatapp",
+  "hompepage": "http://salah.github.io/chatapp",
   "scripts": {
-    "predeploy":"npm run build",
-    "deply":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

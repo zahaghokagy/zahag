@@ -15,15 +15,37 @@ html {
   scroll-behavior: smooth;
 }
 /* for all page */
+@keyframes logohide {
+  from {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  to {
+    clip-path: polygon(0 0, 0% 0, 0% 100%, 0 100%);
+  }
+}
+@keyframes logoshow {
+  from {
+    clip-path: polygon(0 0, 0% 0, 0% 100%, 0 100%);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
 .bg-me {
   background-color: hsl(240, 100%, 98%);
 }
 /* */
 .scrollnav {
-  box-shadow: 0 0.4px 4px 0 #2424321e;
+  box-shadow: 0 0.4px 6px 0 #2424321e;
+}
+.cls-1 {
+  fill: #3f51b5;
+}
+.cls-2 {
+  isolation: isolate;
 }
 /* Nav bar things */
-nav img {
+nav svg {
   width: 60%;
   max-width: 300px;
   transition: 200ms;
@@ -84,7 +106,7 @@ nav li a:active {
   }
 }
 @media screen and (max-width: 992px) {
-  nav img {
+  nav svg {
     width: 170px;
   }
   .txtdark {
@@ -98,7 +120,7 @@ nav li a:active {
   }
 }
 @media screen and (max-width: 768px) {
-  nav img {
+  nav svg {
     width: 160px;
   }
 }
@@ -192,11 +214,9 @@ nav li a:active {
   }
 }
 footer {
-  background-color: hsl(240, 79%, 87%);
+  background-color: hsla(240, 51%, 81%, 0.144);
 }
-.contact {
-  background-color: hsl(240, 85%, 92%);
-}
+
 .contact h1 {
   color: #242432;
   font-weight: bold;
@@ -204,23 +224,36 @@ footer {
   letter-spacing: 2px;
 }
 .contact button {
+  outline: none;
   background: none;
-  color: #4943ed;
+  color: #242432;
   font-weight: bold;
-  border: 2px solid #4943ed;
+  border: 2px solid #242432;
   border-radius: 50px;
 }
 .contact button:hover {
-  background: #4943ed;
+  background: #242432;
   color: white;
+}
+.contact button:active {
+  background: #242432bb;
 }
 .contact h2 {
   color: #242432;
-  font-size: 20px;
+  font-size: 18px;
 }
 .contact h2 a {
-  color: #31bd2cc7;
+  color: #6fda44;
   font-size: 20px;
   font-weight: bold;
   text-decoration: none;
+}
+#hr:first-child {
+  width: 70%;
+}
+#hr {
+  border: 1px solid #24243223;
+  width: 100%;
+  margin: auto 0 auto 0;
+  border-radius: 5px;
 }

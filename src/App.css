@@ -11,11 +11,17 @@ body {
   font-family: "Gilroy";
   background-color: #e5e3ff;
 }
+html {
+  scroll-behavior: smooth;
+}
 /* for all page */
 .bg-me {
   background-color: hsl(240, 100%, 98%);
 }
-
+/* */
+.scrollnav {
+  box-shadow: 0 0.4px 4px 0 #2424321e;
+}
 /* Nav bar things */
 nav img {
   width: 60%;
